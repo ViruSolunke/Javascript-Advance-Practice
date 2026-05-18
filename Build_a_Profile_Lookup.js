@@ -1,3 +1,8 @@
+/*
+In this lab, you will build a profile lookup that looks up information about people in a contacts list.
+For this example imagine there is a contact named Akira Laine, the lookUpProfile("Akira", "lastName") should return Laine.
+*/
+
 const contacts = [
   {
     firstName: "Akira",
@@ -28,11 +33,11 @@ const contacts = [
 function lookUpProfile(name, property) {
   for (let i = 0; i < contacts.length; i++) {
     // Name match hua
-    if (contacts[i].firstName === name) {
+    if (contacts[i].firstName === name) { // If the firstName property of the current contact matches the provided name
 
       // Property exist karti hai
-      if (contacts[i].hasOwnProperty(property)) {
-        return contacts[i][property];
+      if (contacts[i].hasOwnProperty(property)) { // Check if the property exists in the contact object
+        return contacts[i][property]; // Return the value of the property using bracket notation
       } else {
         return "No such property";
       }
