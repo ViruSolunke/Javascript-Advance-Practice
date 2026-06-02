@@ -8,4 +8,4 @@ function titleCase(str) {
     .join(" ");                   // join words back into a string
 }
 
-console.log(titleCase("I like to code"))
+console.log(titleCase("I like to code")) // titleCase function used to convert the string "I like to code" to title case, which should return "I Like To Code"git add .
