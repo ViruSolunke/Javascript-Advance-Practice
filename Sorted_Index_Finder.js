@@ -16,3 +16,4 @@ console.log(getIndexToIns([20, 3, 5], 19));    // 2
 console.log(getIndexToIns([10, 20, 30, 40, 50], 35)); // 3
 console.log(getIndexToIns([40, 60], 50));      // 1
 console.log(getIndexToIns([], 5));             // 0
+

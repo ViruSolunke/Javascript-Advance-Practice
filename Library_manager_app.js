@@ -86,3 +86,5 @@ function getTotalPages(catalog) {
 
 // Test the function
 console.log(getTotalPages(library));
+
+

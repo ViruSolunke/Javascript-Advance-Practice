@@ -13,3 +13,5 @@ function diffArray(arr1, arr2) {
 // ✅ Example Test
 console.log(diffArray(["diamond", "stick", "apple"], ["stick", "emerald", "bread"]));
 // Output: ["diamond", "apple", "emerald", "bread"]
+
+

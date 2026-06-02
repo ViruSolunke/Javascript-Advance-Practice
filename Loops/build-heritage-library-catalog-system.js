@@ -21,8 +21,8 @@ const rawCatalogCards = [
   "Ancient Scroll | Anonymous | 850 | ",
 ];
 
-function parseCard(rawString) {
-  const parts = rawString.split("|");
+function parseCard(rawString) { // Parses a single catalog card string into an object
+  const parts = rawString.split("|"); // Split the string by the pipe delimiter
   const trimmedParts = [];
   for (let i = 0; i < parts.length; i++) {
     trimmedParts.push(parts[i].trim());
@@ -31,7 +31,7 @@ function parseCard(rawString) {
   const author = trimmedParts[1];
   const year = trimmedParts[2];
   const location = trimmedParts[3];
-  return {
+  return { // Create an object with the parsed data, using "Unknown" for any missing fields
     title: title || "Unknown",
     author: author || "Unknown",
     year: year ? parseInt(year) : "Unknown",
@@ -39,17 +39,17 @@ function parseCard(rawString) {
   };
 }
 
-function parseCatalog(rawCards) {
+function parseCatalog(rawCards) { // Parses an array of raw catalog card strings into an array of book objects
   const catalog = [];
-  for (let i = 0; i < rawCards.length; i++) {
+  for (let i = 0; i < rawCards.length; i++) { 
     catalog.push(parseCard(rawCards[i]));
   }
   return catalog;
 }
 
-const catalog = parseCatalog(rawCatalogCards);
+const catalog = parseCatalog(rawCatalogCards); // Parse the raw catalog cards into a structured catalog array of objects
 
-function findByAuthor(catalog, author) {
+function findByAuthor(catalog, author) { // Searches the catalog for books by a specific author, returning an array of matching entries
   const searchTerm = author.toLowerCase();
   const results = [];
   for (let i = 0; i < catalog.length; i++) {
