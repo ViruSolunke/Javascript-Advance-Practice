@@ -28,7 +28,7 @@ const contacts = [
     number: "unknown",
     likes: ["JavaScript", "Gaming", "Foxes"],
   },
-];
+]; // An array of contact objects, where each object represents a contact with properties such as firstName, lastName, number, and likes. This array serves as the data source for the lookUpProfile function to search through when looking up a contact's information based on their name and the specified property.
 
 function lookUpProfile(name, property) {
   for (let i = 0; i < contacts.length; i++) {

@@ -23,6 +23,4 @@ function findElement(arr, func) {  // works like a filter function, but instead 
   }
   return undefined;
 }
-
-
 */
