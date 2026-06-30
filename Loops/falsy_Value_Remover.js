@@ -7,4 +7,4 @@ console.log(bouncer([7, "ate", "", false, 9])) // bouncer function takes an arra
 console.log(bouncer(["a", "b", "c"]))
 console.log(bouncer([false, null, 0, NaN, undefined, ""])
 )
-console.log(bouncer([null, NaN, 1, 2, undefined]))
+console.log(bouncer([null, NaN, 1, 2, undefined])) // In this example, the input array contains the values null, NaN, 1, 2, and undefined. The falsy values in this array are null, NaN, and undefined. Therefore, the output of the function will be [1, 2], which includes only the truthy values from the original array.S
