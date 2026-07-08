@@ -1,0 +1,51 @@
+# GrooveStation 🎵
+
+A simple web-based Drum Machine built with **HTML, CSS, and JavaScript**.  
+This project is inspired by the freeCodeCamp Drum Machine lab but styled and customized with my own design.
+
+---
+
+## 🚀 Features
+- Nine interactive drum pads mapped to keys **Q, W, E, A, S, D, Z, X, C**.
+- Click or press the keyboard keys to trigger sounds.
+- Displays the name of the sound currently being played.
+- Accessible design with clear labels and responsive layout.
+- Lightweight and easy to run in any modern browser.
+
+---
+
+## 🖥️ User Stories Implemented
+- `#drum-machine` container holds all elements.
+- `#pad-bank` contains nine clickable drum pads.
+- Each pad has an embedded `<audio>` element with a unique sound.
+- Pads respond to both **mouse clicks** and **keyboard presses**.
+- The `#display` element shows the name of the triggered sound.
+
+---
+
+## 🎧 Sound Samples
+All audio clips are provided by freeCodeCamp:  
+- Heater 1  
+- Heater 2  
+- Heater 3  
+- Heater 4  
+- Clap  
+- Open-HH  
+- Kick-n'-Hat  
+- Kick  
+- Closed-HH  
+
+---
+
+## 📂 Project Overview
+
+<p align="center">
+  <img src="drum_machine.png" width="700">
+</p>
+
+---
+
+## 🛠️ How to Run
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/your-username/groovestation.git
