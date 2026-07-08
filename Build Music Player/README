@@ -1,0 +1,146 @@
+# 🎵 Music Player
+
+A modern and responsive Music Player built using **HTML, CSS, and JavaScript**. This application allows users to play, pause, skip, and navigate through a playlist with a clean and interactive user interface.
+
+<p align="center">
+  <img src="music_player_img.png" alt="Music Player Preview" width="800">
+</p>
+
+---
+
+## ✨ Features
+
+🎶 Play and pause songs  
+⏭️ Next and previous song controls  
+📃 Interactive playlist  
+🎵 Displays current song title and artist  
+📱 Responsive design for desktop and mobile devices  
+🎨 Clean and modern user interface  
+♿ Accessibility support with ARIA labels  
+
+---
+
+## 🚀 Live Demo
+
+Add your deployed link here:
+
+```text
+https://your-live-demo-link.com
+```
+
+---
+
+## 📸 Preview
+
+| Desktop View | Mobile View |
+|--------------|-------------|
+| Music Player Interface | Responsive Design |
+
+---
+
+## 🛠️ Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript (ES6)
+- Responsive Design
+- DOM Manipulation
+- Audio API
+
+---
+
+## 📂 Project Structure
+
+```text
+Music-Player-App/
+│
+├── index.html
+├── styles.css
+├── script.js
+├── music_player_img.png
+└── README.md
+```
+
+---
+
+## 🎮 Controls
+
+| Button | Function |
+|---------|-----------|
+| ▶️ Play | Play the current song |
+| ⏸️ Pause | Pause the current song |
+| ⏮️ Previous | Play previous song |
+| ⏭️ Next | Play next song |
+| Playlist Item | Play selected song |
+
+---
+
+## 📱 Responsive Design
+
+The application is fully responsive and works seamlessly on:
+
+- 💻 Desktop
+- 📱 Mobile
+- 📟 Tablets
+
+---
+
+## 🧠 What I Learned
+
+During this project, I gained hands-on experience with:
+
+- JavaScript Audio API
+- Event Handling
+- DOM Manipulation
+- Array Methods
+- State Management
+- Responsive Web Design
+- Accessibility Best Practices
+
+---
+
+## 🌟 Future Improvements
+
+- 🔊 Volume Control
+- 🎚️ Progress Bar
+- 🔀 Shuffle Mode
+- 🔁 Repeat Mode
+- ❤️ Favorite Songs
+- 🌙 Dark / Light Theme Toggle
+
+---
+
+## 📷 Screenshot
+
+<p align="center">
+  <img src="music_player_img.png" alt="Music Player Screenshot" width="900">
+</p>
+
+---
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to fork this repository and submit a pull request.
+
+---
+
+## 👨‍💻 Author
+
+**Virendra Solunke**
+
+- GitHub: https://github.com/your-github-username
+- LinkedIn: https://linkedin.com/in/your-linkedin-profile
+
+---
+
+## ⭐ Support
+
+If you like this project, please consider giving it a ⭐ on GitHub!
+
+---
+
+<p align="center">
+  Made with ❤️ and JavaScript 🎵
+</p>
