@@ -26,7 +26,7 @@ console.log(countdown(-1));
 // []
 
 
-// Range Count
+// Range of Numbers Generator
 
 function rangeOfNumbers(startNum, endNum) {
   // Base case
@@ -52,3 +52,43 @@ console.log(rangeOfNumbers(10, 15));
 
 console.log(rangeOfNumbers(2, 8));
 // [2, 3, 4, 5, 6, 7, 8]
+
+// Permutation Generator
+
+function permuteString(str, prefix = "", results = []) {
+  // Base case
+  if (str.length === 0) {
+    if (!results.includes(prefix)) {
+      results.push(prefix);
+    }
+    return results;
+  }
+
+  // Recursive case
+  for (let i = 0; i < str.length; i++) {
+    const remaining = str.slice(0, i) + str.slice(i + 1);
+    permuteString(remaining, prefix + str[i], results);
+  }
+
+  return results;
+}
+
+console.log(permuteString("far"));
+// ["far", "fra", "afr", "arf", "rfa", "raf"]
+
+console.log(permuteString("fcc"));
+// ["fcc", "cfc", "ccf"]
+
+console.log(permuteString("p"));
+// ["p"]
+
+console.log(permuteString(""));
+// [""]
+
+console.log(permuteString("walk"));
+// [
+//   "walk", "wakl", "wlak", "wlka", "wkla", "wkal",
+//   "awlk", "awkl", "alwk", "alkw", "aklw", "akwl",
+//   "lawk", "lakw", "lwak", "lwka", "lkaw", "lkwa",
+//   "kawl", "kalw", "kwal", "kwla", "klaw", "klwa"
+// ]
