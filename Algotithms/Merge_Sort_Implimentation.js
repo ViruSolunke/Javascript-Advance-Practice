@@ -5,44 +5,33 @@ function mergeSort(arr) {
         return arr;
     }
 
-    // Middle Index
-    const mid = Math.floor(arr.length / 2);
 
-    // Left Half ko recursively sort karo
-    const left = mergeSort(arr.slice(0, mid));
-
-    // Right Half ko recursively sort karo
-    const right = mergeSort(arr.slice(mid));
+    const mid = Math.floor(arr.length / 2);    // Middle Index
+    const left = mergeSort(arr.slice(0, mid));    // Left Half ko recursively sort karo
+    const right = mergeSort(arr.slice(mid));  // Right Half ko recursively sort karo
 
     // Final Sorted Array
     const sorted = [];
 
-    // Left pointer
-    let i = 0;
-
-    // Right pointer
-    let j = 0;
+    let i = 0;   // Left pointer
+    let j = 0;  // Right pointer
 
     // Dono arrays ko compare karo
     while (i < left.length && j < right.length) {
 
         if (left[i] <= right[j]) {
-
             sorted.push(left[i]);
             i++;
 
         } else {
-
             sorted.push(right[j]);
             j++;
 
         }
     }
 
-    // Jo elements bach gaye unhe add karo
-    return sorted
-        .concat(left.slice(i))
-        .concat(right.slice(j));
+
+    return sorted.concat(left.slice(i)).concat(right.slice(j));    // Jo elements bach gaye unhe add karo
 }
 
 
@@ -356,3 +345,54 @@ function mergeSort(arr) {
                       
 
 */ 
+
+
+// ====================================================================
+// Merge Sort By FreeCodeCamp =>
+
+// ====================================================================
+
+function mergeSort(array) {
+  if (array.length <= 1) {
+    return;
+  }
+  
+  const middlePoint = Math.floor(array.length / 2);
+  const leftPart = array.slice(0, middlePoint);
+  const rightPart = array.slice(middlePoint);
+  
+  mergeSort(leftPart);
+  mergeSort(rightPart);
+  
+  let leftArrayIndex = 0;
+  let rightArrayIndex = 0;
+  let sortedIndex = 0;
+  
+  while (leftArrayIndex < leftPart.length && rightArrayIndex < rightPart.length) {
+    if (leftPart[leftArrayIndex] < rightPart[rightArrayIndex]) {
+      array[sortedIndex] = leftPart[leftArrayIndex];
+      leftArrayIndex += 1;
+    } else {
+      array[sortedIndex] = rightPart[rightArrayIndex];
+      rightArrayIndex += 1;
+    }
+    sortedIndex += 1;
+  }
+  
+  while (leftArrayIndex < leftPart.length) {
+    array[sortedIndex] = leftPart[leftArrayIndex];
+    leftArrayIndex += 1;
+    sortedIndex += 1;
+  }
+  
+  while (rightArrayIndex < rightPart.length) {
+    array[sortedIndex] = rightPart[rightArrayIndex];
+    rightArrayIndex += 1;
+    sortedIndex += 1;
+  }
+}
+
+const numbers = [4, 10, 6, 14, 2, 1, 8, 5];
+console.log('Unsorted array: ');
+console.log(numbers);
+mergeSort(numbers);
